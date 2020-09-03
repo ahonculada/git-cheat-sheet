@@ -1,5 +1,25 @@
 # GIT CHEAT SHEET  
 
+## Create a new repository on the command line  
+` echo "# <repo name>" >> README.md`  
+` git init`  
+` git add README.md`  
+` git commit -m "init commit"`  
+` git branch -M master`  
+` git remote add origin https://github.com/ahonculada/<repo name>`  
+` git push -u origin master`  
+
+## Push an existing repository from the command line  
+` git remote add origin https://github.com/<user name>/<repo name>`  
+` git commit -m "init commit"`  
+` git branch -M master`  
+` git remote add origin https://github.com/<user name>/<repo name>.git`  
+` git push -u origin master`  
+
+## Push an existing repository from the command line  
+` git remote add origin https://github.com/<user name>/<repo name>.git`  
+` git branch -M master`  
+` push -u origin master`  
 
 ## Configure Tooling   
 Configure user information for all local repositories  
