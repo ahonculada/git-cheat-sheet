@@ -104,14 +104,34 @@ Temporarily stores all modified tracked files
 > `$ git stash pop`  
 > Restores the most recently stashed files  
 
-> `$ git stash list'  
+> `$ git stash list`  
 > Lists all stashed changesets  
 
-> `$ git stash drop  
+> `$ git stash drop`  
 > Discards the most recently stashed changeset  
 
 ## Review History  
 Browse and inspect the evolution of project files  
+> `$ git log`  
+> Lists version history for the current branch  
+
+> `$ git log -follow [file]`  
+> Lists version hisotry for a file, including renames  
+
+> '$ git diff [first-branch]...[second-branch]`  
+> Shows content differences between two branches  
+
+> `$ git show [commit]`  
+> Outputs metadata and content changes of the specified commit  
+
+## Redo Commits  
+Erase mistakes and craft replacement history  
+> `$ git reset [commit]`  
+> Undoes all commits after [commit], preserving changes locally
+
+> `$ git reset --hard [commit]`  
+> Discards all hisotry and changes back to the specified commit  
+
 
 
 
