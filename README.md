@@ -118,7 +118,7 @@ Browse and inspect the evolution of project files
 > `$ git log -follow [file]`  
 > Lists version hisotry for a file, including renames  
 
-> '$ git diff [first-branch]...[second-branch]`  
+> `$ git diff [first-branch]...[second-branch]`  
 > Shows content differences between two branches  
 
 > `$ git show [commit]`  
@@ -131,6 +131,20 @@ Erase mistakes and craft replacement history
 
 > `$ git reset --hard [commit]`  
 > Discards all hisotry and changes back to the specified commit  
+
+## Synchronize Changes  
+Registar a repository bookmark and exhange version history  
+> `$ git fetch [bookmark]`  
+> Downloads all history from the repository bookmark  
+
+> `$ git merge [bookmark]/[branch]`   
+> Combines bookmark's branch into current local branch  
+
+> `$ git push [alias] [branch]`  
+> Uploads all local branch commits to GitHub  
+
+> `$ git pull`  
+> Downloads bookmark hisotry and incorporates changes  
 
 
 
