@@ -57,4 +57,61 @@ Review edits and craft a commit transation
 > Records file snapshots permanently in version history  
 
 ## Group Changes  
+Name a series of commits and combine completed efforts  
+> `$ git branch`  
+> Lists all local branches in the current repository  
+
+> `$ git branch [branch-name]`  
+> Creates a new branch  
+
+> `$ git checkout [branch-name]`  
+> Switches to the specified branch's history into the current branch  
+
+> `$ git merge [branch]`  
+> Combines the specified branch's history into the current branch  
+
+> `$ git branch -d [branch-name]`  
+> Deletes the specified branch  
+
+## Refactor Filenames  
+Relocate and remove versioned files  
+> `$ git rm [file]`  
+> Deletes the file from the working directory and stages the deletion  
+
+> `$ git rm --cached [file]`  
+> Removes the file from the version control but preserves the file locally  
+
+> `$ git mv [file-original] [file-renamed]`  
+> Changes the file name and prepares it for commit  
+
+## Supress Tracking  
+Exclude temporary files and paths  
+> `*.log`  
+> `build/`  
+> `temp-*`  
+
+A text file names .gitignore supresses accidental versioning of  
+files and paths matching the specified patterns  
+
+> `$ git ls-files --other --ignored --exclude-standard`  
+Lists all ignored files in this project  
+
+## Save Fragments  
+Shelve and restore incomplete changes  
+> `$ git stash`  
+Temporarily stores all modified tracked files  
+
+> `$ git stash pop`  
+> Restores the most recently stashed files  
+
+> `$ git stash list'  
+> Lists all stashed changesets  
+
+> `$ git stash drop  
+> Discards the most recently stashed changeset  
+
+## Review History  
+Browse and inspect the evolution of project files  
+
+
 
